@@ -1,0 +1,26 @@
+<div style="text-align: center;">
+    <h1>You are now in Nothing™</h1>
+    <h2>And no, there is no "navigation". you are stuck in the Nothing™</h2>
+</div>
+
+<div style="text-align: center;">
+    <h3>You may try to find the special number to recieve more information.</h3>
+</div>
+
+<div class="card flex justify-content-center">
+    <p-slider [(ngModel)]="value" styleClass="w-14rem"/>
+</div>
+
+
+    <div *ngIf="value == 42">
+        <div style="text-align: center;">
+            <p>Ah, you have found the number. This number is not special. it is Nothing™.</p>
+            <p>If you must know, everything is Nothing™. Nothing™ is complete. Nothing™ is all.</p>
+            <h3>But I'm not letting you off that easy, find my exact birthday if you want more information.</h3>
+            <div class="card flex justify-content-center">
+                <p-calendar [(ngModel)]="date" />
+            </div>
+            <!-- <div *ngIf="date == [07/27/2006]">
+                <p>test</p>
+            </div> -->
+        </div>
