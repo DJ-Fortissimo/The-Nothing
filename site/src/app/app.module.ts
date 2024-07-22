@@ -15,6 +15,8 @@ import { ButtonModule } from 'primeng/button';
 import { NothingComponent } from './nothing/nothing.component';
 import { SliderModule } from 'primeng/slider';
 import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { CalendarModule } from 'primeng/calendar';
     AccordionModule,
     ButtonModule,
     SliderModule,
-    CalendarModule
+    CalendarModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,11 +16,30 @@
         <div style="text-align: center;">
             <p>Ah, you have found the number. This number is not special. it is Nothing™.</p>
             <p>If you must know, everything is Nothing™. Nothing™ is complete. Nothing™ is all.</p>
-            <h3>But I'm not letting you off that easy, find my exact birthday if you want more information.</h3>
+            <h3>But I'm not letting you off that easy, find the day one of the best selling Nintendo consoles released in North America if you want more information.</h3>
             <div class="card flex justify-content-center">
                 <p-calendar [(ngModel)]="date" />
             </div>
-            <!-- <div *ngIf="date == [07/27/2006]">
-                <p>test</p>
-            </div> -->
+            <div *ngIf="(date | date: 'dd/MM/yyyy') == '19/11/2006'">
+                <h3>So, about Nothing™...</h3>
+                <p>We at Nothing™ </p>
+                <p>For more information, find my favorite video game character :]</p>
+
+                <div class="card flex justify-content-center">
+                    <p-dropdown (onChange)="charaFuntion()" [options]="characters" [(ngModel)]="selectedCharacter" optionLabel="name"
+                        [showClear]="true" placeholder="Select a Character"></p-dropdown>
+                </div>
+                
+                <div *ngIf="selectedCharacter.name == 'SANSSS UNDERTALEEEEE'">
+                    <p>lmao no</p>
+                </div>
+                <div *ngIf="selectedCharacter.name == 'Paintbrush'">
+                    <p>While Painty <em>IS</em> my beloved, they are unfortunately not a video game character, so</p>
+                </div>
+                <div *ngIf="selectedCharacter.name == 'Punchy'; else elseBlock">
+                    <p>more info</p>
+                </div>
+                <ng-template #elseBlock>Nope! Incorrect! Narp! Wrong! *LOUD INCORRECT BUZZER SOUND* TRY AGAIN!</ng-template>
+                
+            </div>
         </div>
