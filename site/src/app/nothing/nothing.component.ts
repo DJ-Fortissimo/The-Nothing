@@ -24,12 +24,18 @@ export class NothingComponent implements OnInit {
 
   ngOnInit() {
       this.characters = [
-          { name: 'Punchy', code: 'PU' },
-          { name: 'Neon J', code: 'NJ' },
-          { name: 'Maru', code: 'MA' },
-          { name: 'SANSSS UNDERTALEEEEE', code: 'SAN' },
-          { name: 'Inna', code: 'IN' },
-          { name: 'Paintbrush', code: 'PB' },
+        { name: 'Neon J', code: 'NJ' },
+        { name: 'Inna', code: 'IN' },
+        { name: 'Paintbrush', code: 'PB' },
+        { name: 'Maru', code: 'MA' },
+        { name: 'Cube', code: 'CU' },
+        { name: 'Sonic', code: 'SON' },
+        { name: 'Punchy', code: 'PU' },
+        { name: 'amogus', code: 'AMO' },
+        { name: 'Stanley', code: 'STAN' },
+        { name: 'Yuri', code: 'YU' },
+        { name: 'SANSSS UNDERTALEEEEE', code: 'SAN' },
+          
       ];
   }
   charaFuntion() {
