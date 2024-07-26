@@ -22,8 +22,12 @@
             </div>
             <div *ngIf="(date | date: 'dd/MM/yyyy') == '19/11/2006'">
                 <h3>So, about Nothing™...</h3>
-                <p>We at Nothing™ </p>
-                <p>For more information, find my favorite video game character :]</p>
+                <p>While in your world you may believe in a god or gods to explain the unexplained, such as the creation of the world and where souls move onto in death,
+                    Nothing™ is really the true answer. There are no gods, there is no afterlife, there is just Nothing™.</p>
+                    <p>Isn't it beautiful?</p>
+                    <p>No?</p>
+                    <p>You want to know more?</p>
+                <p>Fine, for more information, find my favorite video game character :]</p>
 
                 <div class="card flex justify-content-center">
                     <p-dropdown (onChange)="charaFuntion()" [options]="characters" [(ngModel)]="selectedCharacter" optionLabel="name"
