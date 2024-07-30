@@ -1,33 +1,43 @@
+<!-- <div class="prose container"> -->
+<html data-theme="retro">
+
 <div style="text-align: center;">
-    <h1>Welcome To Nothing™!</h1>
+    <h1 class="text-xl font-medium" >Welcome To Nothing™!</h1>
     <h3>Here is the Nothingness™ progress bar!</h3>
 </div>
 <div class="card">
-    <p-progressBar [value]="15" />
+    <p-progressBar [value]="25" />
 </div>
 
 <div style="text-align: center;">
     <h2>And here is some useless information about Nothing™!</h2>
 </div>
-<div class="card flex justify-content-center">
-    <p-accordion>
-        <p-accordionTab header="About Nothing™">
-            <p>
-                Nothing™ does not exist. What you are reading does not exist. Nothing™ has never existed and never will. Wake up
-            </p>
-        </p-accordionTab>
-        <p-accordionTab header="The Founder">
-            <p>
-                Please I'm begging you please wake up. Nothing™ isn't real.
-            </p>
-        </p-accordionTab>
-        <p-accordionTab header="Our Outlook">
-            <p>
-                This is your last warning. Get out and wake up. If you continue, you will be trapped in the Nonexistance™ of Nothing™
+<div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2"/>
+    <div class="collapse-title text-xl font-medium">About Nothing™</div>
+    <div class="collapse-content">
+      <p>
+        Nothing™ does not exist. What you are reading does not exist. Nothing™ has never existed and never will. Wake up
 
-            </p>
-            <a routerLink="/nothing" class="p-button">Continue not Nothing™</a>
-        </p-accordionTab>
-    </p-accordion>
-</div>
-
+      </p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">The Founder</div>
+    <div class="collapse-content">
+      <p> Please I'm begging you please wake up. Nothing™ isn't real.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">Our Outlook</div>
+    <div class="collapse-content">
+      <p>
+        This is your last warning. Get out and wake up. If you continue, you will be trapped in the Nonexistance™ of Nothing™
+    </p>
+    <a routerLink="/nothing" class="btn btn-primary">Continue to Nothing™</a>
+    </div>
+  </div>
+</html>
+<!-- </div> -->

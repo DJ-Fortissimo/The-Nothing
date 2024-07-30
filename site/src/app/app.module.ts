@@ -16,6 +16,7 @@ import { NothingComponent } from './nothing/nothing.component';
 import { SliderModule } from 'primeng/slider';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
+import { HelpComponent } from './help/help.component';
 
 
 
@@ -23,7 +24,8 @@ import { DropdownModule } from 'primeng/dropdown';
   declarations: [
     AppComponent,
     HomeComponent,
-    NothingComponent
+    NothingComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
